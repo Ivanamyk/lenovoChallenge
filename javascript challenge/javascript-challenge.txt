@@ -1,0 +1,110 @@
+
+Javascript challenge
+
+1)
+      const lookForEven = (nums) => {
+        for (let i = 2; i <= nums.length; i++) {
+          if (i % 2 == 0) {
+            console.log(i);
+          }
+        }
+      };
+      //console.log(lookForEven([1, 2, 3, 4, 5, 6, 7, 8]));
+
+      ------------------------------------------------------
+
+2)
+      const checkPalindrome = (testWord) => {
+        let leftSide = 0;
+        let rightSide = testWord.length - 1;
+
+        while (leftSide <= rightSide) {
+          if (testWord[leftSide] !== testWord[rightSide]) return false;
+          //if both ends do not match; it returns false right away.
+          leftSide++;
+          rightSide--;
+        }
+        return true;
+      };
+      //console.log(checkPalindrome("refer")); // true
+      //console.log(checkPalindrome("book")); // false
+
+      ------------------------------------------------------
+
+3)
+   <html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function printPrime() {
+        let i, j, c, start, end;
+
+        start = parseInt(document.getElementById("start").value);
+        end = parseInt(document.getElementById("end").value);
+
+        document.getElementById("result").innerHTML = "";
+
+        for (i = start; i <= end; i++) {
+          c = 0;
+          for (j = 1; j <= i; j++) {
+            if (i % j == 0) {
+              c++;
+            }
+          }
+          if (c == 2) {
+            document
+              .getElementById("result")
+              .insertAdjacentHTML("beforeend", i + "<br>");
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Check prime numbers</h3>
+    First number:
+    <input
+      type="number"
+      name="start"
+      id="start"
+      min="1"
+      style="width: 80px"
+      value="0"
+    />&nbsp; Second Number:
+    <input
+      type="number"
+      name="end"
+      id="end"
+      min="1"
+      style="width: 80px"
+      value="0"
+    />&nbsp;<input
+      type="submit"
+      value="Check!"
+      onclick="printPrime()"
+      name="print"
+      style="margin-left: 10px; padding: 5px"
+    />
+    <div id="result"></div>
+  </body>
+</html>
+
+      
+ ------------------------------------------------------   
+
+
+5) 
+Size: Number; Color: Boolean; Object: String.
+{2, true, string} - {0, false, string} - {2, true, string} - {2, false, string} - 
+{1, true, string} - {0, false, string} - {2, true, string} - {1, false, string}
+
+
+ ------------------------------------------------------
+
+6) 
+Size: Small = 0; Medium = 1; Large = 2;
+Color: Blue = true; Red = false;
+Car = string;
+

@@ -1,0 +1,545 @@
+/*navbar*/
+.container-navbarDsktp {
+  display: none;
+}
+.container-navbarDsktp2 {
+  display: none;
+}
+.container-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  height: 66px;
+}
+.navLogo {
+  margin-top: 4px;
+}
+.hamburger-menu {
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(124, 123, 123);
+}
+.menu-button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.menu-button,
+.hamburger-menu {
+  font-size: 1.2em;
+}
+
+/*linkbar*/
+.container-linkbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  height: 45px;
+}
+.link-item {
+  color: rgb(98, 98, 98);
+  font-size: 0.76em;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0px 13px 0px 13px;
+}
+.link-item-btn {
+  margin-top: 3px;
+  border: none;
+  font-size: 1.2em;
+  background-color: transparent;
+}
+.hidden-btn {
+  display: none;
+}
+.link-item-btn a {
+  text-decoration: none;
+  color: rgb(98, 98, 98);
+}
+
+/*linkbar2*/
+.container-linkbar2 {
+  display: none;
+}
+
+/*banner*/
+.container-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ae144f;
+  height: 67px;
+}
+.shop-text {
+  font-size: 0.78em;
+  margin-left: 10px;
+}
+.shop-link {
+  background-color: transparent;
+  border: none;
+  font-size: 0.82em;
+  width: 90px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+.shop-link a,
+.shop-text {
+  color: rgb(221, 221, 221);
+}
+/*banner2*/
+.container-banner2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ae144f;
+  height: 74px;
+}
+.banner2-text {
+  font-size: 1.16em;
+  color: white;
+  text-align: center;
+  margin: 0px 10px 5px 10px;
+}
+.banner2-text b {
+  margin-left: 4px;
+}
+/*card*/
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+.doorbuster {
+  background-color: rgb(184, 12, 12);
+  width: fit-content;
+  color: white;
+  font-size: 0.77em;
+  padding: 5px 25px 5px 25px;
+  border-radius: 3px;
+}
+.card-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+}
+.card-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.card-title {
+  color: rgb(75, 117, 175);
+  text-align: center;
+  font-size: 1.2em;
+}
+.card-text {
+  font-weight: 500;
+  font-size: 2em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.card-additional-txt {
+  font-size: 0.9em;
+  margin-bottom: 510px;
+}
+
+/*button*/
+.card-btn {
+  background-color: #265d87;
+  border: none;
+  border-radius: 5px;
+  width: 270px;
+  height: 50px;
+  margin-top: 13px;
+}
+.card-btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.27em;
+}
+
+/*body*/
+.body-title {
+  font-weight: 500;
+  margin: 30px 10px 5px 10px;
+}
+.division-line {
+  height: 0.5px;
+  background: #c7c7c7;
+  margin: 0px 10px 0px 10px;
+}
+
+/*filterBtn*/
+.container-filter {
+  display: flex;
+  justify-content: flex-end;
+}
+.filter-Btn {
+  text-align: center;
+  font-size: 0.99em;
+  background-color: transparent;
+  border: 0.5px solid rgb(139, 139, 139);
+  color: #797979;
+  border-radius: 3px;
+  height: 37px;
+  margin: 13px 5px 3px 5px;
+}
+.filter-icon {
+  font-size: 1.1em;
+  margin-left: 20px;
+}
+.container-filterResult {
+  display: none;
+}
+.container-searchbar {
+  display: none;
+}
+
+/*Effects*/
+a:hover {
+  text-decoration: underline;
+}
+.container-linkbar2 div :hover {
+  background-color: #eaeaea92;
+  color: #ae144f;
+}
+.container-navbarDsktp .navLinks :hover {
+  color: #ae144f;
+  font-size: 1.15em;
+}
+.banner2-text :hover {
+  text-decoration: underline;
+}
+.container-navbar div :hover {
+  background-color: #1b1a1a;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  /*Navbar*/
+  .navLogo {
+    width: 130px;
+    height: 45px;
+  }
+  .hamburger-menu {
+    font-size: 1.5em;
+  }
+  .menu-button {
+    font-size: 1.5em;
+    margin: 0px 10px 0px 10px;
+  }
+
+  /*Linkbar*/
+  .container-linkbar {
+    display: flex;
+    height: 70px;
+  }
+  .link-item {
+    font-size: 0.85em;
+    text-align: center;
+    margin: 0px 14px 0px 14px;
+  }
+  .link-item-btn {
+    display: none;
+    margin: 0px;
+    display: none;
+  }
+  .hidden-btn {
+    display: block;
+  }
+
+  /*banner*/
+  .shop-text {
+    font-size: 0.92em;
+  }
+  .shop-link {
+    font-size: 0.93em;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 99px;
+  }
+  /*banner2*/
+  .container-banner2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ae144f;
+    height: 74px;
+  }
+  .banner2-text {
+    color: white;
+    text-align: center;
+    margin: 0px 10px 5px 10px;
+  }
+
+  /*body*/
+  .body-title {
+    font-size: 1.6em;
+  }
+
+  /*filterBtn*/
+  .filter-Btn {
+    font-size: 0.87em;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  /*Navbar*/
+  .container-navbar {
+    display: none;
+  }
+  .container-navbarDsktp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+  }
+  .navLinks {
+    display: flex;
+  }
+  .menu-button {
+    background-color: transparent;
+    font-size: 1em;
+    width: 37px;
+    color: rgb(58, 58, 58);
+  }
+  .navLogo {
+    margin-top: 0px;
+  }
+  .container-navbarDsktp2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+  }
+  .navbarDsktp-item {
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 0px 15px 0px 15px;
+    text-decoration: none;
+    color: black;
+  }
+  /*searchbar*/
+  .container-searchbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  /*Linkbar*/
+  .container-linkbar {
+    height: 57px;
+    justify-content: center;
+  }
+  .link-item {
+    font-size: 1.08em;
+    text-align: center;
+    margin: 0px 45px 0px 45px;
+  }
+  .link-item-btn {
+    display: none;
+    margin: 0px;
+    display: none;
+  }
+  .hidden-btn {
+    display: block;
+  }
+
+  /*banner*/
+  .container-banner {
+    height: 46px;
+  }
+  .shop-text {
+    font-size: 0.92em;
+  }
+  .shop-link {
+    font-size: 0.93em;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 99px;
+  }
+
+  /*body*/
+  .container-body {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .body-title {
+    font-size: 1.6em;
+  }
+
+  /*filterBtn*/
+  .filter-Btn {
+    font-size: 0.88em;
+    width: fit-content;
+    height: 40px;
+  }
+  .container-filter {
+    margin-right: 30px;
+  }
+
+  /*Card*/
+  .container-card {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 50px;
+  }
+  .card-item {
+    border: 0.5px solid rgb(194, 194, 194);
+    border-radius: 3px;
+    margin: 15px 10px 0px 10px;
+    padding: 20px 25px 20px 25px;
+  }
+  .card-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 130px;
+    height: 130px;
+  }
+  .crd2 img {
+    margin-top: 50px;
+  }
+
+  .card-title {
+    color: rgb(75, 117, 175);
+    text-align: center;
+    font-size: 0.92em;
+  }
+  .card-text {
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .card-additional-txt {
+    font-size: 0.65em;
+  }
+
+  /*button*/
+  .card-btn {
+    background-color: #265d87;
+    border: none;
+    border-radius: 5px;
+    width: 190px;
+    height: 40px;
+    margin-top: 13px;
+  }
+  .card-btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  .container-filterResult {
+    display: block;
+    width: 220px;
+    margin-left: 10px;
+    padding: 0px 10px 0px 10px;
+  }
+  .filter-title {
+    display: flex;
+    height: 40px;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container-filterResult li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+  }
+  ul {
+    padding: 0px;
+    margin-bottom: 5px;
+  }
+  .seeMoreLink {
+    text-decoration: none;
+    font-size: 0.74em;
+    color: #265d87;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .filter-line {
+    margin-top: 15px;
+    margin-left: 0px;
+    width: 220px;
+  }
+  .body-main {
+    display: flex;
+  }
+  .container-searchbar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .searchInput {
+    padding-left: 15px;
+    width: 295px;
+    height: 27px;
+    border: 1.5px solid black;
+    font-size: 0.77em;
+    border-radius: 3px 0px 0px 3px;
+  }
+  .searchBtn {
+    padding-bottom: 3px;
+    height: 31px;
+    background-color: black;
+    border-radius: 0px 3px 3px 0px;
+  }
+  .GiMagnifyingGlass {
+    color: #ae144f;
+  }
+  .container-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*linkbar2*/
+  .container-linkbar2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #f0f0f081;
+    color: rgb(74, 73, 73);
+  }
+  .container-linkbar2 .link-item {
+    color: rgb(98, 98, 98);
+    font-size: 0.76em;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0px 13px 0px 13px;
+  }
+  .container-linkbar2 .sale {
+    color: rgb(253, 80, 80);
+  }
+
+  /*Effects*/
+  a:hover {
+    text-decoration: underline;
+  }
+  .container-linkbar2 div :hover {
+    color: #ae144f;
+  }
+  .container-navbarDsktp .navLinks :hover {
+    color: #ae144f;
+    font-size: 1.15em;
+  }
+  .banner2-text :hover {
+    text-decoration: underline;
+  }
+}
